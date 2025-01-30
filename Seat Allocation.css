@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f7f2;
+}
+
+.sidebar {
+    background-color: #12303f;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #194a5b;
+}
+
+.logout {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.allocation-form {
+    background-color: #eae8df;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.allocation-form label {
+    font-weight: bold;
+}
+
+.allocation-form input,
+.allocation-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.exam-halls {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.exam-halls input,
+.exam-halls select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.loading {
+    text-align: center;
+    color: #28a745;
+    font-size: 18px;
+}
+
+.statistics {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.statistics h3 {
+    margin-bottom: 10px;
+}
+
+.statistics p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.arrange,
+.receive-mail {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.arrange {
+    background-color: #28a745;
+}
+
+.receive-mail {
+    background-color: #007bff;
+}

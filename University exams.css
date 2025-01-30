@@ -1,0 +1,149 @@
+/* Reset some basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f7f2;
+}
+
+.sidebar {
+    background-color: #12303f;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    background-color: #194a5b;
+}
+
+.logout {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.add-room {
+    background-color: #eae8df;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.add-room label {
+    grid-column: span 1;
+}
+
+.add-room input, .add-room select, .add-room .add-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    grid-column: span 2;
+}
+
+.table-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-controls {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #eae8df;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d9534f;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #eae8df;
+}
+
+.clear-all, .next {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.clear-all {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.next {
+    background-color: #28a745;
+    color: white;
+}

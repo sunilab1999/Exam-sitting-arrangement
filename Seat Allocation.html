@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Seat Allocation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Allocation</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile.png" alt="User Avatar">
+            <span><a href="Dashboard.html"> TEST</a></span>
+        </div>
+        <nav>
+            <a href="Dashboard.html">Home</a>
+            <a href="Manage Rooms.html">Manage Rooms</a>
+            <a href="University Exams.html">University Exams</a>
+            <a href="Seat Allocation.html">Seat Allocation</a>
+        </nav>
+        <button class="logout"><a href="login form.html"> Log Out </a></button>
+    </div>
+    <div class="content">
+        <h2>Select Date</h2>
+        <form class="allocation-form">
+            <label for="date">Select Date</label>
+            <input type="date" id="date" value="2023-07-12">
+
+            <label for="time">Select Time</label>
+            <select id="time">
+                <option>FN</option>
+                <option>AN</option>
+            </select>
+
+            <label for="exam-schedule">Exams Scheduled</label>
+            <select id="exam-schedule">
+                <option>Select Exam</option>
+               
+            </select>
+        </form>
+
+        <h3>Select Exam Halls</h3>
+        <div class="exam-halls">
+            <input type="text" placeholder="Search">
+            <select>
+                <option>Sort By</option>
+                <option>Increasing Capacity</option>
+                <option>Decreasing Capacity</option>
+            </select>
+            <div class="loading">
+                <span>Loading...</span>
+            </div>
+        </div>
+
+      
+        <div class="statistics">
+            <h3>Statistics</h3>
+            <p>Total Rooms: <span>20</span></p>
+            <p>Available Seats: <span>660</span></p>
+            <p>Rooms Selected: <span>0</span></p>
+            <p>Seats Selected: <span>0</span></p>
+            <p>Total Participants: <span>0</span></p>
+        </div>
+
+        
+        <div class="buttons">
+            <button class="arrange">Arrange</button>
+            <button class="receive-mail">Receive Mail</button>
+        </div>
+    </div>
+
+</body>
+</html>

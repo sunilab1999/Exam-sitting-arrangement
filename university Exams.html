@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Management</title>
+    <link rel="stylesheet" href="University exams.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile.png" alt="User Avatar">
+            <span><a href="Dashboard.html"> TEST</a></span>
+        </div>
+        <nav>
+            <a href="Dashboard.html">Home</a>
+            <a href="Mangae Rooms.html">Manage Rooms</a>
+            <a href="university Exams.html">University Exams</a>
+            <a href="Seat Allocation.html">Seat Allocation</a>
+        </nav>
+        <div class="logout">
+            <a href="login form.html">Log Out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>ADD ROOM</h2>
+        <form class="add-room">
+            <label for="room-no">Room No</label>
+            <input type="text" id="room-no" placeholder="M101">
+
+            <label for="floor-no">Floor No</label>
+            <select id="floor-no">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="block">Block</label>
+            <select id="block">
+                <option>M-George</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="seats">Available Seats</label>
+            <input type="number" id="seats" placeholder="30">
+
+            <button type="button" class="add-button">ADD</button>
+        </form>
+
+        <!-- Available Rooms Table -->
+        <div class="table-container">
+            <h3>AVAILABLE ROOMS</h3>
+            <div class="table-controls">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>Sort By</option>
+                    <option>Entries</option>
+                </select>
+                <select>
+                    <option>Filter By</option>
+                    <!-- Add more filters as needed -->
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room No</th>
+                        <th>Floor No</th>
+                        <th>Block</th>
+                        <th>Available Seats</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example rows -->
+                    <tr>
+                        <td>M105</td>
+                        <td>1</td>
+                        <td>M-George</td>
+                        <td>30</td>
+                        <td><button class="delete">🗑️</button></td>
+                    </tr>
+                    <tr>
+                        <td>M113</td>
+                        <td>1</td>
+                        <td>M-George</td>
+                        <td>30</td>
+                        <td><button class="delete">🗑️</button></td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+            <div class="footer">
+                <span>Total Seats Available: 660</span>
+                <button class="clear-all">CLEAR ALL</button>
+                <button class="next">NEXT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

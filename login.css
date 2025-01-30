@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: 
+        linear-gradient(to bottom, rgba(163, 214, 124, 0.7), rgba(63, 141, 52, 0.7)),
+        url('WhatsApp\ Image\ 2024-11-14\ at\ 21.12.54_a8ea48e3.jpg'); /* Replace with the actual path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+.login-container {
+    background: rgba(213, 245, 176, 0.1);
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+form p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+form a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}

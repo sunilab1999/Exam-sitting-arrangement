@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Manage Rooms.css">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Rooms</title>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-section">
+            <img src="profile.png" alt="Profile" class="profile-img">
+            <p class="username"><a href="Dashboard.html"> TEST</a></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Dashboard.html">Home</a></li>
+                <li><a href="Mangae Rooms.html" class="active">Manage Rooms</a></li>
+                <li><a href="university Exams.html">University Exams</a></li>
+                <li><a href="Seat Allocation.html">Seat Allocation</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <a href="login form.html">Log Out</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="form-section">
+            <h2>Add Room</h2>
+            <form>
+                <div class="form-group">
+                    <label for="room-no">Room No</label>
+                    <input type="text" id="room-no" placeholder="M101">
+                </div>
+                <div class="form-group">
+                    <label for="floor-no">Floor No</label>
+                    <select id="floor-no">
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="block">Block</label>
+                    <select id="block">
+                        <option>M-George</option>
+                        <option>A-Smith</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="seats">Available Seats</label>
+                    <input type="number" id="seats" value="30">
+                </div>
+                <button type="submit" class="add-button">Add</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h3>Available Rooms</h3>
+            <div class="table-controls">
+                <input type="text" placeholder="Search" class="search-input">
+                <label>Sort By:</label>
+                <select>
+                    <option>Entries</option>
+                </select>
+                <label>Filter By:</label>
+                <select>
+                    <option>-</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room No</th>
+                        <th>Floor No</th>
+                        <th>Block</th>
+                        <th>Available Seats</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M105</td>
+                        <td>1</td>
+                        <td>M-George</td>
+                        <td>30</td>
+                        <td><button class="delete-button">🗑️</button></td>
+                    </tr>
+                    <tr>
+                        <td>M113</td>
+                        <td>1</td>
+                        <td>M-George</td>
+                        <td>30</td>
+                        <td><button class="delete-button">🗑️</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            <div class="total-seats">
+                Total Seats Available: 660
+            </div>
+            <div class="action-buttons">
+                <button class="clear-button">Clear All</button>
+                <button class="next-button">Next</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
